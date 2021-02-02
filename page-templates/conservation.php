@@ -8,6 +8,20 @@ get_header();?>
 
 <?php get_template_part('template-parts/hero');?>
 
+<?php if (get_field('intro_text')) {?>
+<section>
+    <div class="container narrow">
+        <div class="expanding-text">
+            <?php the_field('intro_text');?>
+            <a href="" class="read-more">Read More</a>
+            <div class="additional-content">
+                <?php the_field('read_more_text');?>
+                <a href="" class="read-less">Read Less</a>
+            </div>    
+        </div>
+    </div>
+</section>
+<?php } ?>
 <section>
     <div class="container toggle wide">
     <?php if( have_rows('sections') ):

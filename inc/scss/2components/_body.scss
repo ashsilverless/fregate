@@ -149,8 +149,9 @@ section {
 #path33_1_ {
 	transform: scale(1);
 	transform-origin: 50% 50%;
-	transition: all 2s ease;
+	
 	&.reveal {
+		transition: all 2s ease;
 		transform: scale(200);
 		opacity: 0;
 	}
