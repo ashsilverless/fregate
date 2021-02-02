@@ -1,0 +1,20 @@
+/*! == GRID == */
+/*=====MASTER GRID RULES=====*/
+
+.container {
+  position: relative;
+  display: grid;
+  max-width: calc(#{$container-width} - #{$container-gutter__doubled});
+  margin: 0 auto;
+  padding: 0 $container-gutter;
+  &.narrow {
+    max-width: calc((#{$container-width} - #{$container-gutter__doubled}) * .5);
+  }
+  &.wide {
+    max-width: calc((#{$container-width} - #{$container-gutter__doubled}) * .8);
+  }
+  &.split {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+}

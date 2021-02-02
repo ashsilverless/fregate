@@ -1,0 +1,123 @@
+/*! == PAGE OVERRIDES == */
+
+.home {
+	background: $color_brand_blue;
+	.logo-wrapper {
+		position: absolute;
+		top: 60vh;
+		left: 0;
+		width: 100%;
+		transform: translateY(0);
+		&.atTop {
+			position: static;
+			top: 2rem;
+			left: 0;
+			transform: translateY(0) !important;
+		}
+		.logo-bird {
+			display: block !important;
+			width: auto;
+			height: 6rem;
+			bottom: 100%;
+			position: absolute;
+			left: 50%;
+			transform-origin: 100% 100%;
+			margin-left: -3rem;
+			path {
+				fill: $color_brand_yellow;
+			}
+		}
+	}
+	
+	.nav-overlay {
+		&:before {
+			
+		}
+	}
+	
+	&.scrolled {
+		.nav-overlay {
+			padding-top: 2rem;
+			&:before {
+				height: 67px;
+				background: linear-gradient(180deg,rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%);
+				box-shadow: none;
+			}
+			nav .menu {
+				border-color: white;
+			}
+			.book-now-cta {
+				color: white;
+			}
+		}
+		nav ul li a {
+			color: white;
+		}
+	}
+	.logo-wrapper svg path {
+		fill: white;
+		opacity: 1;
+	}
+}
+
+
+
+
+
+.page-template-contact {
+	.nav-overlay {
+		&:before {
+			background: transparent;
+		}
+		svg path {
+			fill: $color_brand_blue;
+		}
+		nav ul li a {
+			color: $color_brand_blue;
+		}
+		
+		.menu {
+			border-color: $color_brand_blue;
+		}
+		.book-now-cta {
+			color: $color_brand_blue;
+		}
+	}
+	&.scrolled {
+		.nav-overlay:before {
+			background: white;
+		}
+	}
+}
+.page-template-level-three {
+	.hero {
+		height: calc(75vh - 1rem);
+		&:before {
+			display: none;
+		}
+		>.container {
+			display: none;
+		}
+	}
+	.sub-nav {
+		display: grid;
+		bottom: initial;
+		top: calc(100% + .5rem);
+		a {
+			&:before {
+				background: white;
+			}
+		}
+	}
+	.intro {
+		margin-top: 7rem;//Nasty arbitrary value
+	}
+}
+
+.page-template-gallery,
+.page-template-news,
+.single {
+	.hero {
+		height: calc(75vh - 1rem);
+	}
+}

@@ -1,0 +1,63 @@
+html {
+    @include scrollbars(1em, $color_grey_light);
+    ::-webkit-scrollbar-thumb {
+    }
+    ::-webkit-scrollbar-track {
+
+    }
+    box-sizing: border-box;    
+}
+
+body {
+    @include scrollbars(1rem, $color_grey_light);
+    margin:0;
+    //background: white;
+    background: $color_grey_lightest; //TEMP
+    transition: background 1s ease, color 1s ease;
+    ::-webkit-scrollbar-thumb {
+    }
+    ::-webkit-scrollbar-track {
+    }
+    border: 1rem solid white;
+    overflow-x: hidden;
+}
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+}
+main {
+    
+}
+*:focus {
+    outline: none;
+}
+
+.button {
+    padding: .5rem 2rem;
+    border: 1px solid $color_grey_light;
+    text-transform: uppercase;
+    color: $color_grey_light;
+    &__centered {
+       display: table;
+       margin: 0 auto;
+       padding: .5rem 5rem;
+    }
+}
+
+ul {
+    li {
+        position: relative;
+        margin-bottom: .5rem;
+        padding-left: 1rem;
+        &:before {
+            content:'';
+            position: absolute;
+            top:.75rem;
+            left: 0;
+            width: .5rem;
+            height: 1px;
+            background: $color_grey_lighter;
+        }
+    }
+}

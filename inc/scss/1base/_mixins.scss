@@ -1,0 +1,88 @@
+/*! == MIXINS == */
+
+@mixin backgroundCover {
+    background-size: cover !important; /* !important added as result of rule not working inside display:grid */
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+@mixin backgroundContain {
+	background-size: contain !important; /* !important added as result of rule not working inside display:grid */
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+}
+
+@mixin childOverlay {
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+}
+
+@mixin psuedoElement {
+    content:'';
+    position: absolute;
+}
+
+@mixin opacity {
+  opacity:0;
+  transition:opacity 0.5s ease;
+}
+
+@mixin flexVertAlign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin blackGrad {
+    background: -moz-linear-gradient(top, hsla(0,0%,0%,0) 0%, hsla(0,0%,0%,1) 100%);
+    background: -webkit-linear-gradient(top, hsla(0,0%,0%,0) 0%,hsla(0,0%,0%,1) 100%);
+    background: linear-gradient(to bottom, hsla(0,0%,0%,0) 0%,hsla(0,0%,0%,1) 100%);
+}
+
+@mixin heading {
+  margin: 0;
+  font-family:$font_primary;
+  font-style: normal;
+  font-weight: 100;
+  color: $color_grey_dark;
+  letter-spacing: 0.15em
+}
+
+@mixin transition-all {
+    transition: all 0.5s ease;
+}
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, black, 50%)) {
+  ::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $color_brand_yellow;
+    -webkit-box-shadow: 0 10px 10px rgba(0,0,0,.5);
+    cursor: pointer;
+  }
+  ::-webkit-scrollbar-track {
+      background: $color_brand_blue;
+
+  }
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+@mixin narrow-section {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@mixin glassyBlur {
+  background: rgb(255 255 255 / 50%);
+  backdrop-filter: blur(10px);
+}
