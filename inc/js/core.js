@@ -81,6 +81,17 @@ jQuery(document).ready(function($) {
 		$('.nav-overlay').toggleClass('active');
 	});
 	
+	$(".hero h1").after().on('click', function(e) {
+		e.preventDefault();
+		console.log('ffff');
+		var heroHeight = $('.hero').height() - 40;
+		$('html, body').animate({
+			scrollTop: $('.hero').offset().top + heroHeight
+		  }, 800, function(){
+		  });
+		
+	});
+	
 	$('.wpcf7-form-control').on('input', function() {
 		if ($(this).val()) {
 			$(this)
