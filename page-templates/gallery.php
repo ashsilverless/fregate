@@ -23,7 +23,7 @@ get_header();?>
         </div>
 
         <div class="gallery-tab all">
-            <div class="masonry gallery-wrapper0">
+            <div class="gallery-wrapper">
             <?php if( have_rows('gallery') ):
             while( have_rows('gallery') ): the_row();
             $imageCat = strtolower(get_sub_field('gallery_category'));?>
@@ -31,10 +31,9 @@ get_header();?>
             <?php $images = get_sub_field('gallery_images');
             if( $images ):
                 foreach( $images as $image ): ?>
-                    <div class="grid-item">
-                        <a href="<?php echo $image['url']; ?>" class="inline">
-                         <img src="<?php echo esc_url($image['sizes']['large']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                         </a>
+                    <div class="gallery-wrapper__item">
+                        <a href="<?php echo $image['url']; ?>" style="background:url(<?php echo $image['url'];?>);">
+                        </a>
                     </div>
                 <?php endforeach;
             endif; ?>
@@ -49,14 +48,13 @@ get_header();?>
         while( have_rows('gallery') ): the_row();
         $imageCatLow = strtolower(get_sub_field('gallery_category'));?>
         <div class="gallery-tab <?php echo $imageCatLow;?>">
-        <div class="masonry gallery-wrapper<?php echo $i;?>">
+        <div class="gallery-wrapper gallery-wrapper<?php echo $i;?>">
         <?php $images = get_sub_field('gallery_images');
         if( $images ):
             foreach( $images as $image ): ?>
-                <div class="grid-item">
-                    <a href="<?php echo $image['url']; ?>" class="inline">
-                     <img src="<?php echo esc_url($image['sizes']['large']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                     </a>
+                <div class="gallery-wrapper__item">
+                    <a href="<?php echo $image['url']; ?>" style="background:url(<?php echo $image['url'];?>);">
+                    </a>
                 </div>
             <?php endforeach;
         endif; ?>
@@ -64,10 +62,7 @@ get_header();?>
         </div>
         <?php $i++; endwhile;
         endif; ?>
-    
-    
-    
-    
+ 
 </div>
 
    

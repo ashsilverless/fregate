@@ -1,6 +1,5 @@
 //@prepros-prepend mixitup.min.js
 //@prepros-prepend owl.carousel.min.js
-//@prepros-prepend masonry.pkgd.min.js
 //@prepros-prepend jquery.magnific-popup.js
 
 
@@ -200,7 +199,7 @@ jQuery(document).ready(function($) {
 		  });
 	});
 	
-	if ($('.gallery-wrapper').length) {
+	/*if ($('.gallery-wrapper').length) {
 	var macy = Macy({
 		container: '.gallery-wrapper',
 		trueOrder: false,
@@ -214,9 +213,9 @@ jQuery(document).ready(function($) {
 			400: 1
 		}
 	});
-	}
+	}*/
 
-	$('.masonry').each(function(index, value) {
+	/*$('.masonry').each(function(index, value) {
 		var galleryClass = `.gallery-wrapper${index}`;
 		var macy = Macy({
 			container: galleryClass,
@@ -231,7 +230,7 @@ jQuery(document).ready(function($) {
 				400: 1
 			}
 		});
-	});
+	});*/
 	
 	$(function() {
 		$('.gallery-tab').slideUp();
@@ -241,6 +240,8 @@ jQuery(document).ready(function($) {
 	$('.gallery-filter p').on('click', function(e) {
 		e.preventDefault();
 		var selectedCat = $(this).attr('data-cat');
+		$('.gallery-filter p.active').removeClass('active');
+		$(this).addClass('active');
 		$(this).closest('.gallery-filter').siblings('.gallery-tab').slideUp();
 		$(this).closest('.gallery-filter').siblings('.gallery-tab.' + selectedCat).slideDown();
 	});

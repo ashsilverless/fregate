@@ -32,14 +32,13 @@ get_header();?>
     </div>
     <div class="tabbed__panel gallery">
         <div class="container">
-            <div class="masonry gallery-wrapper">
+            <div class="gallery-wrapper">
                 <?php $images = get_field('gallery');
                 if( $images ):
                     foreach( $images as $image ): ?>
-                        <div class="grid-item">
-                            <a href="<?php echo $image['url']; ?>" class="inline">
-                             <img src="<?php echo esc_url($image['sizes']['large']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                             </a>
+                        <div class="gallery-wrapper__item">
+                            <a href="<?php echo $image['url']; ?>" style="background:url(<?php echo $image['url'];?>);">
+                            </a>
                         </div>
                     <?php endforeach;
                 endif; ?>

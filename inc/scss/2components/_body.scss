@@ -1007,13 +1007,30 @@ input[type="submit"] {
 		text-transform: uppercase;
 	}
 	&__trigger {
+		position: relative;
 		display: inline-block;
 		padding: 0 2rem;
 		border-right: 1px solid $color_grey_lighter;
 		text-transform: uppercase;
 		cursor: pointer;
+		&:after {
+			content: '';
+			position: absolute;
+			left: 30%;
+			bottom: -4px;
+			width: 40%;
+			height: 1px;
+			background: $color_brand_green;
+			transform: scaleX(0);
+			transition: transform .5s ease;
+		}
+		&.active {
+			&:after {
+				transform: scale(1);
+			}
+		}
 		&:first-of-type {
-			padding-left: 0;
+			margin-left: -2rem;
 		}
 		&:last-of-type {
 			border: none;
@@ -1028,7 +1045,19 @@ input[type="submit"] {
 	}
 }
 
-
+.gallery-wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap:1rem;
+	&__item {
+		a {
+			@include backgroundCover;
+			display: block;
+			height: 13rem;
+			
+		}
+	}
+}
 
 
 
