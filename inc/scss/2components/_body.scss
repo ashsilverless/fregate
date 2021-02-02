@@ -1040,6 +1040,7 @@ input[type="submit"] {
 
 .owl-carousel .owl-stage {
 	display: flex;
+	max-height: 80vh;
 }
 
 .owl-carousel .owl-item img {
