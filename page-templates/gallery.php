@@ -12,7 +12,7 @@ get_header();?>
     <div class="container">
         <div class="gallery-filter">
             <h3 class="heading heading__6">Filter</h3>
-            <p class="gallery-filter__trigger" data-cat="all">All</p>
+            <p class="gallery-filter__trigger active" data-cat="all">All</p>
             <?php if( have_rows('gallery') ):
             while( have_rows('gallery') ): the_row();
             $imageCat = get_sub_field('gallery_category');
