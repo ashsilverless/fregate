@@ -70,15 +70,13 @@ observer = new IntersectionObserver(
       var iterator = currentSlide.values();
       if (entry.isIntersecting) {
         entry.target.classList.add('active');
-        //document.getElementById(currentSlide).classList.add('active');
         for (let classItem of iterator) {
-              document.getElementById(classItem).classList.add('active');
+            document.getElementById(classItem).classList.add('active');
         }
       } else {
         entry.target.classList.remove("active");
-        //document.getElementById(currentSlide).classList.remove('active');
         for (let classItem of iterator) {
-              document.getElementById(classItem).classList.remove('active');
+            document.getElementById(classItem).classList.remove('active');
         }
       }
     });
