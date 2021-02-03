@@ -17,7 +17,7 @@ get_header();?>
         <div class="map-nav__content">
             <?php if( have_rows('carousel_card') ):
             while( have_rows('carousel_card') ): the_row();?>
-            <div id="<?php the_sub_field('anchor');?> post-<?php the_sub_field('map_item');?>" class="map-nav__content__item">
+            <div id="post-<?php the_sub_field('map_item');?>" class="map-nav__content__item">
                 <div class="card-carousel owl-carousel">
                     <?php $images = get_sub_field('card_gallery');
                     if( $images ):
