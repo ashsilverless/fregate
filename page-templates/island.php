@@ -11,7 +11,12 @@ get_header();?>
 <section class="map-nav">
     <div class="container">
         <div class="map-nav__map">
-            <?php get_template_part('template-parts/nav-map');?>
+            <?php get_template_part('template-parts/detail-map');?>
+            
+            
+            
+            
+            <!--<?php get_template_part('template-parts/nav-map');?>-->
         </div>
         
         <div class="map-nav__content">

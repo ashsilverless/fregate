@@ -177,6 +177,9 @@ body.reveal {
 	position: relative;
 	display: inline-block;
 	margin-top: 10vh;
+	&.island {
+		display: block;
+	}
 }
 
 .map-item {

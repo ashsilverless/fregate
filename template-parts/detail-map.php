@@ -1,4 +1,4 @@
-<div class="large-map-wrapper">
+<div class="large-map-wrapper island">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1659.79 1292.61">
 	  <defs>
 		<style>
@@ -2526,6 +2526,7 @@ if( $map_items->have_posts() ) : while( $map_items->have_posts() ) : $map_items-
 	</div>
 	<?php 
 	endwhile; endif;
+	wp_reset_postdata();
 	?>
 
 
