@@ -23,14 +23,28 @@ get_header();?>
             <?php if( have_rows('carousel_card') ):
             $i = 1;
             while( have_rows('carousel_card') ): the_row();?>
-            <div id="post-<?php the_sub_field('map_item');?>" class="map-nav__content__item" ref-slide="post-<?php the_sub_field('map_item');?>">
+            <div id="<?php 
+            $post_objects = get_sub_field('map_item');
+            if( $post_objects ): 
+            foreach( $post_objects as $post): 
+            setup_postdata($post); 
+            echo 'post-' . get_the_ID() . ' '; 
+            endforeach; 
+            wp_reset_postdata();
+            endif;?>" class="<?php 
+            $post_objects = get_sub_field('map_item');
+            if( $post_objects ): 
+            foreach( $post_objects as $post): 
+            setup_postdata($post); 
+            echo 'post-' . get_the_ID() . ' '; 
+            endforeach; 
+            wp_reset_postdata();
+            endif;?> map-nav__content__item" ref-slide="post-<?php the_sub_field('map_item');?>">
                 <div class="card-carousel owl-carousel">
                     <?php $images = get_sub_field('card_gallery');
                     if( $images ):
                         foreach( $images as $image ): ?>
-                            <div class="item">
-                                 <img src="<?php echo esc_url($image['sizes']['large']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-                            </div>
+                            <img src="<?php echo esc_url($image['sizes']['large']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                     <?php $i++; endforeach;
                     endif; ?>
                 </div>
@@ -52,21 +66,27 @@ const markers = document.querySelectorAll(".map-item");
 observer = new IntersectionObserver(
   entries => {
     entries.forEach(entry => {
-        var currentSlide = entry.target.getAttribute('ref-slide');
+      var currentSlide = entry.target.classList;
+      var iterator = currentSlide.values();
       if (entry.isIntersecting) {
         entry.target.classList.add('active');
-        document.getElementById(currentSlide).classList.add('active');
-        console.log(currentSlide);
+        //document.getElementById(currentSlide).classList.add('active');
+        for (let classItem of iterator) {
+              document.getElementById(classItem).classList.add('active');
+        }
       } else {
         entry.target.classList.remove("active");
-        document.getElementById(currentSlide).classList.remove('active');
+        //document.getElementById(currentSlide).classList.remove('active');
+        for (let classItem of iterator) {
+              document.getElementById(classItem).classList.remove('active');
+        }
       }
     });
   },
   {
     threshold: [0.5],
-    trackVisibility: true,
-    delay:100
+    //trackVisibility: true,
+    //delay:100
   });
 var s = 0;
 slides.forEach(slide => {

@@ -47,8 +47,7 @@ get_header();?>
                     <?php $images = get_sub_field('carousel_images');
                     if( $images ):
                         foreach( $images as $image ): ?>
-                                 <img src="<?php echo esc_url($image['sizes']['large']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-
+                            <img src="<?php echo esc_url($image['sizes']['large']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                     <?php endforeach;
                     endif; ?>
                 </div>
