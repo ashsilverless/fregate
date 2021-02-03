@@ -179,6 +179,26 @@ body.reveal {
 	margin-top: 10vh;
 	&.island {
 		display: block;
+		.map-item {
+			&__label {
+				color: $color_brand_blue;
+			}
+			&__icon {
+				&.light .cls-2 {
+					fill: $color_brand_blue;
+				}
+			}
+		}
+		.cls-20, .cls-21, .cls-5, .cls-6, .cls-19, .cls-4 {
+			opacity: 0;
+		}
+		.map-item {
+			transform: scale(0); 
+			transition: transform 0.5s cubic-bezier(0.68, -0.4, 0, 1.9);
+			&.active {
+				transform: scale(1);
+			}
+		}
 	}
 }
 

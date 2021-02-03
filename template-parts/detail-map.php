@@ -2513,7 +2513,7 @@ if( $map_items->have_posts() ) : while( $map_items->have_posts() ) : $map_items-
 	$postID = get_the_ID();
 	?>
 	
-	<div class="map-item" style="top:<?php the_field('coords_top');?>%; left:<?php the_field('coords_left');?>%;">
+	<div id="post-<?php echo $post->ID;?>" class="map-item" style="top:<?php the_field('coords_top');?>%; left:<?php the_field('coords_left');?>%;">
 		<a href="<?php the_field('page_link');?>#post-<?php echo $post->ID;?>">
 			<div class="map-item__icon <?php the_field('icon_colour');?>"><?php echo file_get_contents("./wp-content/" . $mapIcon, FILE_USE_INCLUDE_PATH); ?></div>
 		</a>
