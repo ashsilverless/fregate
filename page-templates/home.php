@@ -14,8 +14,8 @@ get_header();?>
     
     <div class="scroll-components__headline parallax-down">
         <div class="container">
-            <h1 class="heading heading__0">Utterly Unique</h1>
-            <h1 class="heading heading__0">Utterly Secluded</h1>
+            <h1 class="heading heading__0">Unique On</h1>
+            <h1 class="heading heading__0">The Planet</h1>
         </div>
     </div>
     <div class="scroll-components__map">

@@ -10,7 +10,7 @@
 <title><?php echo get_bloginfo(); ?></title>
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" type="image/x-icon" />
 
 <script src="https://kit.fontawesome.com/dc2cdfd0db.js" crossorigin="anonymous"></script>
