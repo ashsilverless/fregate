@@ -10,6 +10,22 @@ section {
 	margin-bottom: $vertical-spacing;
 }
 
+.section-heading {
+	width: 100%;
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
+.meta {
+
+	&__date {
+		margin-bottom: 2rem;
+		padding: 1rem 0;
+		border-top: 2px solid white;
+		border-bottom: 2px solid white;
+		font-size: 1.2rem;
+	}
+}
 .scroll-components {
 	position: relative;
 	z-index: 500;
