@@ -158,5 +158,5 @@
 	</g>
 	</svg>
 	
-<a href="<?php echo home_url();?>" class="button button__centered">See Map</a>
+<a href="<?php echo home_url();?>/map" class="button button__centered">See Map</a>
 </div>
