@@ -11,6 +11,7 @@ get_header();?>
 <section class="map-nav">
     <div class="container">
         <div class="map-nav__map">
+          <a href="#rockspa" class="scroll">Click here</a>
             <?php get_template_part('template-parts/detail-map');?>
             
             
@@ -28,8 +29,13 @@ get_header();?>
             if( $post_objects ): 
             foreach( $post_objects as $post): 
             setup_postdata($post); 
-            echo 'post-' . get_the_ID() . ' '; 
+            if (get_field('scroll_to_page_anchor')){
+              $grouptitle = get_field('scroll_to_page_anchor');
+            } else {
+              echo 'post-' . get_the_ID() . ' '; 
+            }
             endforeach; 
+            echo $grouptitle;
             wp_reset_postdata();
             endif;?>" class="<?php 
             $post_objects = get_sub_field('map_item');
@@ -61,6 +67,22 @@ get_header();?>
 </section>
 
 <script>
+
+jQuery(document).ready(function($) { 
+  function scrollDiv() {
+    var hash = window.location.hash;
+    var desiredHeight = $('.nav-overlay nav').height() + 40;
+    $('html, body').animate({
+    scrollTop: $(hash).offset().top - desiredHeight
+    }, 800, function(){
+      //Do something else
+    });
+  }
+  jQuery(window).load(function () {
+    scrollDiv();  
+  });
+});
+
 const slides = document.querySelectorAll(".map-nav__content__item");
 const markers = document.querySelectorAll(".map-item");
 observer = new IntersectionObserver(
@@ -90,6 +112,7 @@ var s = 0;
 slides.forEach(slide => {
   observer.observe(slide);
 });
+
 
 
 </script>
