@@ -130,6 +130,12 @@
 					fill: $color_brand_blue;
 				}
 			}
+			&__panel {
+				display: none;
+			}
+			a {
+				pointer-events: none;
+			}
 		}
 		.cls-20, .cls-21, .cls-5, .cls-6, .cls-19, .cls-4 {
 			opacity: 0;
