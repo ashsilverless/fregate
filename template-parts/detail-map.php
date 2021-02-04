@@ -2518,7 +2518,7 @@ if( $map_items->have_posts() ) : while( $map_items->have_posts() ) : $map_items-
 		<?php if (get_field('scroll_to_page_anchor')){
 			  the_field('scroll_to_page_anchor');
 			} else {
-			  echo '#post-' . get_the_ID() . ' '; 
+			  echo 'post-' . get_the_ID() . ' '; 
 			}?>	
 
 			">
