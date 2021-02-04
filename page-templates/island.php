@@ -11,13 +11,7 @@ get_header();?>
 <section class="map-nav">
     <div class="container">
         <div class="map-nav__map">
-          <a href="#rockspa" class="scroll">Click here</a>
             <?php get_template_part('template-parts/detail-map');?>
-            
-            
-            
-            
-            <!--<?php get_template_part('template-parts/nav-map');?>-->
         </div>
         
         <div class="map-nav__content">
@@ -32,7 +26,7 @@ get_header();?>
             if (get_field('scroll_to_page_anchor')){
               $grouptitle = get_field('scroll_to_page_anchor');
             } else {
-              echo 'post-' . get_the_ID() . ' '; 
+              $grouptitle = 'post-' . get_the_ID() . ' '; 
             }
             endforeach; 
             echo $grouptitle;
