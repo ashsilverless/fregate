@@ -179,26 +179,26 @@ get_header();?>
             </g>
             <g id="island-names">
             <text transform="matrix(1 0 0 1 74.5968 178.8934)" class="st6 st7 st3">MAHE</text>
-            <text transform="matrix(1 0 0 1 107.922 149.8533)" class="st6 st2 st8">St. Anne</text>
-            <text transform="matrix(1 0 0 1 107.922 157.9466)" class="st6 st2 st8">Cerf</text>
-            <text transform="matrix(1 0 0 1 38.4156 163.659)" class="st6 st2 st8">Cenception</text>
-            <text transform="matrix(1 0 0 1 59.8385 169.3719)" class="st6 st2 st8">Thérese</text>
-            <text transform="matrix(1 0 0 1 117.9191 166.0398)" class="st6 st2 st8">Anonyme</text>
+            <!--<text transform="matrix(1 0 0 1 107.922 149.8533)" class="st6 st2 st8">St. Anne</text>-->
+            <!--<text transform="matrix(1 0 0 1 107.922 157.9466)" class="st6 st2 st8">Cerf</text>-->
+            <!--<text transform="matrix(1 0 0 1 38.4156 163.659)" class="st6 st2 st8">Cenception</text>-->
+            <!--<text transform="matrix(1 0 0 1 59.8385 169.3719)" class="st6 st2 st8">Thérese</text>-->
+            <!--<text transform="matrix(1 0 0 1 117.9191 166.0398)" class="st6 st2 st8">Anonyme</text>-->
             <text transform="matrix(1 0 0 1 162.67 78.9187)" class="st6 st2 st8">Praslin</text>
             <text transform="matrix(1 0 0 1 186.9498 99.3895)" class="st6 st2 st8">La Digue</text>
-            <text transform="matrix(1 0 0 1 146.0074 61.304)" class="st6 st2 st8">Aride</text>
-            <text transform="matrix(1 0 0 1 153.6246 70.8255)" class="st6 st2 st8">Curieuse</text>
-            <text transform="matrix(1 0 0 1 192.1866 78.9187)" class="st6 st2 st8">Grand Soeur</text>
-            <text transform="matrix(1 0 0 1 184.5695 72.2537)" class="st6 st2 st8">Petite Soeur</text>
-            <text transform="matrix(1 0 0 1 193.6144 87.0115)" class="st6 st2 st8">Felicite</text>
-            <text transform="matrix(1 0 0 1 204.088 92.7244)" class="st6 st2 st8">Marianne</text>
-            <text transform="matrix(1 0 0 1 117.4435 87.0115)" class="st6 st2 st8">Cousin</text>
-            <text transform="matrix(1 0 0 1 111.2545 95.1053)" class="st6 st2 st8">Cousine</text>
+            <!--<text transform="matrix(1 0 0 1 146.0074 61.304)" class="st6 st2 st8">Aride</text>-->
+            <!--<text transform="matrix(1 0 0 1 153.6246 70.8255)" class="st6 st2 st8">Curieuse</text>-->
+            <!--<text transform="matrix(1 0 0 1 192.1866 78.9187)" class="st6 st2 st8">Grand Soeur</text>-->
+            <!--<text transform="matrix(1 0 0 1 184.5695 72.2537)" class="st6 st2 st8">Petite Soeur</text>-->
+            <!--<text transform="matrix(1 0 0 1 193.6144 87.0115)" class="st6 st2 st8">Felicite</text>-->
+            <!--<text transform="matrix(1 0 0 1 204.088 92.7244)" class="st6 st2 st8">Marianne</text>-->
+            <!--<text transform="matrix(1 0 0 1 117.4435 87.0115)" class="st6 st2 st8">Cousin</text>-->
+            <!--<text transform="matrix(1 0 0 1 111.2545 95.1053)" class="st6 st2 st8">Cousine</text>-->
             <text transform="matrix(1 0 0 1 51.2696 124.1453)" class="st6 st2 st8">Silhouette</text>
-            <text transform="matrix(1 0 0 1 51.2696 102.2459)" class="st6 st2 st8">North</text>
-            <text transform="matrix(1 0 0 1 146.0074 140.3318)" class="st6 st2 st8">Ile Aux Recifs</text>
+            <!--<text transform="matrix(1 0 0 1 51.2696 102.2459)" class="st6 st2 st8">North</text>-->
+            <!--<text transform="matrix(1 0 0 1 146.0074 140.3318)" class="st6 st2 st8">Ile Aux Recifs</text>-->
             <text transform="matrix(1 0 0 1 189.3302 157.9466)" class="st6 st2 st8">L’ilot</text>
-            <text transform="matrix(1 0 0 1 117.4435 123.6692)" class="st6 st2 st8">Mamelles</text>
+            <!--<text transform="matrix(1 0 0 1 117.4435 123.6692)" class="st6 st2 st8">Mamelles</text>-->
             </g>
             </svg>
              <div class="scroll-bottom">
