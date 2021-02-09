@@ -36,8 +36,9 @@ get_header();?>
                 <?php $images = get_field('gallery');
                 if( $images ):
                     foreach( $images as $image ): ?>
+                    <?php $thumbImage = $image['sizes']['medium'];?>
                         <div class="gallery-wrapper__item">
-                            <a href="<?php echo $image['url']; ?>" style="background:url(<?php echo $image['url'];?>);">
+                            <a href="<?php echo $image['url']; ?>" style="background:url(<?php echo $thumbImage;?>);">
                             </a>
                         </div>
                     <?php endforeach;
