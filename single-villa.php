@@ -12,7 +12,7 @@ get_header();?>
             <h1 class="heading heading__3 heading__centered"><?php the_title();?></h1>
             <?php the_field('intro_text');?>
             <a href="" class="read-more">Read More</a>
-            <?php if (get_field()) {?>
+            <?php if (get_field('read_more_text')) {?>
             <div class="additional-content">
                 <?php the_field('read_more_text');?>
                 <a href="" class="read-less">Read Less</a>
