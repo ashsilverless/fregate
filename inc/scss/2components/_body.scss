@@ -167,7 +167,7 @@ section {
 	transform-origin: 50% 50%;
 	
 	&.reveal {
-		transition: all 2s ease;
+		transition: all 1s cubic-bezier(0, 0.24, 0, 0.97);
 		transform: scale(200);
 		opacity: 0;
 		fill: #6c8e92;
@@ -324,6 +324,7 @@ body.reveal {
 			border-right: 1px solid white;
 			transform: rotate(45deg);
 			cursor: pointer;
+			animation: animate-arrow 2.5s infinite ease-out;
 		}
 	}
 	.brand-device {
@@ -349,6 +350,15 @@ body.reveal {
 				display: none;
 			}
 		}
+	}
+}
+
+@keyframes animate-arrow {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.25;	
 	}
 }
 
@@ -398,6 +408,7 @@ body.reveal {
 	position: relative;
 	width: 70%;
 	margin: 0 auto;
+	text-align: justify;
 	.read-more,
 	.read-less {
 		position: absolute;
@@ -753,6 +764,7 @@ body.reveal {
 		h3 {
 			margin-bottom: .5rem;
 			color: $color_brand_green;
+			font-weight: 300;
 		}
 		.inner {
 			position: relative;

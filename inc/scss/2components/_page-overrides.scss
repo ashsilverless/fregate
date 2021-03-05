@@ -17,7 +17,7 @@
 		.logo-bird {
 			display: block !important;
 			width: auto;
-			height: 6rem;
+			height: 4rem;
 			bottom: 100%;
 			position: absolute;
 			left: 50%;
@@ -91,9 +91,9 @@
 		&:before {
 			display: none;
 		}
-		>.container {
-			display: none;
-		}
+		// >.container {
+		// 	display: none;
+		// }
 	}
 	.sub-nav {
 		display: grid;
@@ -107,6 +107,9 @@
 	}
 	.intro {
 		margin-top: 7rem;//Nasty arbitrary value
+		.heading {
+			display: none;
+		}
 	}
 }
 

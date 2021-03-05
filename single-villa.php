@@ -96,6 +96,9 @@ get_header();?>
             
             <?php endwhile; endif;//end of adult loop ?>
             </div>
+            
+            <?php if (get_sub_field('child_required')){?>
+            
             <div class="rates__item">
             <?php if( have_rows('child_rates') ):
             while( have_rows('child_rates') ): the_row();?>   
@@ -118,6 +121,8 @@ get_header();?>
             
             <?php endwhile; endif;//end of child loop ?>
             </div>
+            
+            <?php }?>
             
         </div>
         <div class="container split">
