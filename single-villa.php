@@ -11,8 +11,8 @@ get_header();?>
         <div class="expanding-text">
             <h1 class="heading heading__3 heading__centered"><?php the_title();?></h1>
             <?php the_field('intro_text');?>
-            <a href="" class="read-more">Read More</a>
             <?php if (get_field('read_more_text')) {?>
+            <a href="" class="read-more">Read More</a>
             <div class="additional-content">
                 <?php the_field('read_more_text');?>
                 <a href="" class="read-less">Read Less</a>
