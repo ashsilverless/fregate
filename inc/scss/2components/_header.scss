@@ -136,9 +136,7 @@ body:not(.home){
 		
 		svg {
 			width: calc(100% - 2rem);
-			path {
-				fill: white;
-			}
+
 			&.logo-bird {
 				display: block;
 				width: auto;
