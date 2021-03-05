@@ -114,7 +114,6 @@
 	.logo-container {
 		position: relative;
 		grid-column: 1/2;
-		padding-right: .5rem;
 	}
 	.logo-wrapper {
 		svg {
@@ -123,6 +122,25 @@
 				fill: white;
 			}
 			&.logo-bird {
+				display: none;
+			}
+		}
+	}
+}
+
+body:not(.home){
+	.logo-container {
+		padding-right: .5rem;
+	}
+	.logo-wrapper {
+		
+		svg {
+			width: calc(100% - 2rem);
+			path {
+				fill: white;
+			}
+			&.logo-bird {
+				display: block;
 				width: auto;
 				position: absolute;
 				top: -.5rem;
@@ -135,6 +153,7 @@
 		}
 	}
 }
+
 nav {
 	background: none;
 	//position: absolute;
