@@ -186,6 +186,20 @@ jQuery(document).ready(function($) {
 			}
 		}
 	});	
+	$(document).ready(function() {
+		var narrowWidth = $('.container').width();
+		//$('.owl-stage').css('width', narrowWidth + 'px');
+		$('.owl-item').css('width', narrowWidth + 'px');
+	});
+	$('.test-carousel').owlCarousel({
+		items: 1,
+		loop:false,
+		margin:20,
+		padding: 20,
+		nav:true
+	});	
+	
+	
 	
 	$(document).ready(function() {
 		//Sets width of body as no width present on load due to display:none being set

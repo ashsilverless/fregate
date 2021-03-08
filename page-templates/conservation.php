@@ -9,6 +9,7 @@ get_header();?>
 <?php get_template_part('template-parts/hero');?>
 
 <?php if (get_field('intro_text')) {?>
+
 <section>
     <div class="container narrow">
         <div class="expanding-text">
@@ -51,6 +52,7 @@ get_header();?>
                     <?php endforeach;
                     endif; ?>
                 </div>
+
             </div>            
         </div>
         </div>
