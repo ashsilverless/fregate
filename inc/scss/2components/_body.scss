@@ -1389,3 +1389,21 @@ input[type="submit"] {
 		}
 	}
 }
+.controls {
+	margin-bottom: 2rem;
+	li {
+		display: inline-block;
+		padding: .5rem 2rem;
+		transition: all .3s ease;
+		cursor: pointer;
+		&:before {
+			display: none;
+		}
+		&.mixitup-control-active {
+			background:white;
+		}
+		span {
+			
+		}
+	}
+}
