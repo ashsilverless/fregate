@@ -222,8 +222,10 @@ body.reveal {
 			}
 		}
 		&.dark {
-			.cls-2 {
+			.cls-2,
+			.cls-1 {
 				fill: $color_brand_blue;
+				opacity: 1;
 			}
 			circle {
 				opacity: 1;
