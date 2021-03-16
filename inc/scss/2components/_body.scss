@@ -213,7 +213,7 @@ body.reveal {
 				stroke:none;
 			}
 		}
-		&.light {
+		&.light path {
 			.cls-2 {
 				fill: $color_brand_green;
 			}
@@ -221,7 +221,7 @@ body.reveal {
 				opacity: 0;
 			}
 		}
-		&.dark {
+		&.dark path {
 			.cls-2,
 			.cls-1 {
 				fill: $color_brand_blue;
