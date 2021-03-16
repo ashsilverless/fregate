@@ -224,15 +224,15 @@ body.reveal {
 				opacity: 0;
 			}
 		}
-		&.dark path {
+		&.dark {
 			.cls-2,
 			.cls-1 {
 				fill: $color_brand_blue;
 				opacity: 1;
 			}
-			circle {
+			circle.cls-1 {
 				opacity: 1;
-				fill: #bed392;
+				fill: none;
 			}
 		}
 	}
