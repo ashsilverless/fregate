@@ -16,6 +16,7 @@ get_header();?>
         <div class="container">
             <h1 class="heading heading__0">Unique On</h1>
             <h1 class="heading heading__0">The Planet</h1>
+            <p>04°35'19"S - 55°56'55"E</p>
         </div>
     </div>
     <div class="scroll-components__map">

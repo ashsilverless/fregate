@@ -107,6 +107,12 @@ section {
 		left: 0;
 		width: 100%;
 		z-index: 100;
+		p {
+			margin-top:.5rem;
+			font-size: $font_size * 1.3px;
+			letter-spacing: 0.1rem;
+			color: $color_brand_yellow;
+		}
 	}
 	&__map {
 		will-change: transform;
